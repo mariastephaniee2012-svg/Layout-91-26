@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wisata.css">
+    <title>Explore Lombok</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff7fc;
+            color: #333;
+        }
+
+        header {
+            background-color: #f3a6df;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+            color: white;
+        }
+
+        header p {
+            color: white;
+            font-size: 17px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #d86ac4;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .intro {
+            background-color: #f7c9ed;
+            padding: 30px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .intro img {
+            width: 180px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 4px solid white;
+        }
+
+        .intro h2 {
+            margin-top: 0;
+            color: #8e4b82;
+        }
+
+        .intro p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        section {
+            margin-top: 45px;
+        }
+
+        section h2 {
+            color: #9b4d91;
+            border-bottom: 2px solid #e8a5da;
+            padding-bottom: 8px;
+        }
+
+        section p {
+            line-height: 1.7;
+        }
+
+        .food-list {
+            background-color: #fce3f6;
+            padding: 20px 35px;
+            border-radius: 15px;
+        }
+
+        .food-list li {
+            margin: 10px 0;
+        }
+
+        .gili {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            background-color: white;
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #ead4e5;
+        }
+
+        .gili img {
+            width: 250px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .gili h3 {
+            margin-top: 0;
+            color: #9b4d91;
+            font-size: 25px;
+        }
+
+        .gili p {
+            line-height: 1.6;
+        }
+
+        .activities {
+            background-color: #f7c9ed;
+            padding: 25px 30px;
+            border-radius: 15px;
+        }
+
+        .activities li {
+            margin: 12px 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #f3a6df;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            .intro,
+            .gili {
+                grid-template-columns: 1fr;
+            }
+
+            .intro img,
+            .gili img {
+                width: 100%;
+                height: 250px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Lombok</h1>
+        <p>A beautiful island in West Nusa Tenggara</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Lombok</a>
+        <a href="#food">Food</a>
+        <a href="#culture">Culture</a>
+        <a href="#gili">The Gili Islands</a>
+        <a href="#activities">Activities</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about" class="intro">
+
+            <img src="Lombok.jpg" alt="Lombok">
+
+            <div>
+                <h2>About Lombok</h2>
+
+                <p>
+                    Lombok adalah pulau yang berada di provinsi Nusa Tenggara Barat
+                    yang terkenal dengan keindahan alam, pantai, dan budaya Suku Sasak.
+                    Lombok menawarkan berbagai macam pantai yang indah dengan berpasir
+                    putih, air laut yang jernih, terumbu karang yang indah, serta
+                    pulau-pulau yang disebut Gili.
+                </p>
+
+                <p>
+                    Selain itu, Lombok juga memiliki Gunung Rinjani yang merupakan
+                    gunung aktif tertinggi kedua di Indonesia. Gunung Rinjani memiliki
+                    ketinggian 3.726 meter di atas permukaan laut (mdpl).
+                </p>
+
+                <p>
+                    Keindahan Lombok juga dilengkapi dengan budaya Suku Sasak,
+                    desa-desa adat, kain tenun tradisional, dan makanan tradisional
+                    yang memiliki rasa rempah yang kaya, gurih, dan pedas.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="food">
+
+            <h2>Traditional Food</h2>
+
+            <p>
+                Makanan khas Suku Sasak memiliki cita rasa yang kuat dengan banyak
+                menggunakan rempah-rempah. Beberapa makanan khas Lombok antara lain:
+            </p>
+
+<section id="food">
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="Plecing Kangkung Khas Lombok.jpg" alt="Plecing Kangkung">
+            <h3>Plecing Kangkung</h3>
+            <p>
+                Kangkung yang disajikan dengan sambal tomat yang pedas dan segar.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="Sayur-ares-lombok.webp" alt="Ares">
+            <h3>Ares</h3>
+            <p>
+                Makanan khas Lombok yang dibuat dari batang pisang muda dan
+                dimasak dengan bumbu khas.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="Sate rembiga traditional food in lombok!  👏🏻👏🏻👏🏻.jpg" alt="Sate Rembiga">
+            <h3>Sate Rembiga</h3>
+            <p>
+                Sate daging sapi dengan bumbu yang gurih, pedas, dan kaya akan rempah.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="Sate Bulayak, Khas Lombok.jpg" alt="Sate Bulayak">
+            <h3>Sate Bulayak</h3>
+            <p>
+                Sate yang biasanya disajikan bersama bulayak, yaitu lontong
+                khas Lombok yang dibungkus dengan daun.
+            </p>
+        </div>
+
+        <div class="food-card">
+            <img src="download_aa86c850-f2a1-405a-9012-2df784e90638_jpeg (719×479).jpg" alt="Nasi Balap Puyung">
+            <h3>Nasi Balap Puyung</h3>
+            <p>
+                Nasi dengan lauk ayam suwir, kacang kedelai, dan sambal yang
+                memiliki rasa pedas dan gurih.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="culture">
+
+    <h2>Budaya Lombok</h2>
+
+    <p>
+        Lombok tidak hanya terkenal karena pantai dan keindahan alamnya,
+        tetapi juga karena budaya Suku Sasak yang masih dijaga sampai sekarang.
+        Budaya tersebut dapat dilihat melalui rumah adat, desa tradisional,
+        kain tenun, musik, tarian, serta berbagai tradisi yang dilakukan
+        oleh masyarakat Lombok.
+    </p>
+
+    <div class="culture-container">
+        <div class="culture-card">
+
+            <img src="Suku sasak budaya leluhur tertua.jpg" alt="Suku Sasak">
+
+            <div class="culture-text">
+
+                <h3>Suku Sasak</h3>
+
+                <p>
+                    Suku Sasak merupakan suku asli dan kelompok etnis utama
+                    yang tinggal di Pulau Lombok. Kebudayaan Suku Sasak
+                    diwariskan secara turun-temurun dan dapat dilihat dari
+                    bahasa, pakaian, rumah adat, kesenian, serta berbagai
+                    tradisi masyarakatnya.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="culture-card">
+
+            <img src="📍desa sade.jpg" alt="Desa Sade">
+
+            <div class="culture-text">
+
+                <h3>Desa Tradisional</h3>
+
+                <p>
+                    Salah satu tempat untuk melihat kehidupan tradisional
+                    Suku Sasak adalah Desa Sade. Desa ini masih mempertahankan
+                    rumah tradisional, kebiasaan, dan berbagai kegiatan
+                    masyarakat Sasak. Pengunjung juga dapat melihat proses
+                    pembuatan kain tenun tradisional.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="culture-card">
+
+            <img src="Kain tenun khas sasak.jpg" alt="Kain Tenun Sasak">
+
+            <div class="culture-text">
+
+                <h3>Kain Tenun Sasak</h3>
+
+                <p>
+                    Kain tenun merupakan salah satu bagian penting dari
+                    budaya Suku Sasak. Kain ini dibuat secara tradisional
+                    dengan menggunakan alat tenun dan memiliki berbagai
+                    macam motif. Kain tenun biasanya digunakan sebagai
+                    pakaian tradisional atau dalam acara-acara tertentu.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="culture-card">
+
+            <img src="Gendang Beleq is seasick traditional music culture in Lombok,usually they used it for wedding ceremony,etc_.jpg" alt="Gendang Beleq">
+
+            <div class="culture-text">
+
+                <h3>Gendang Beleq</h3>
+
+                <p>
+                    Gendang Beleq merupakan kesenian musik tradisional
+                    Suku Sasak yang menggunakan gendang berukuran besar.
+                    Kesenian ini biasanya dimainkan secara berkelompok
+                    dalam acara adat, pernikahan, dan berbagai acara
+                    penting lainnya.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="culture-card">
+
+            <img src="Tradisi Peresean, Lombok, Nusa Tenggara Barat.jpg" alt="Peresean">
+
+            <div class="culture-text">
+
+                <h3>Peresean</h3>
+
+                <p>
+                    Peresean merupakan salah satu kesenian tradisional
+                    Suku Sasak. Dalam pertunjukannya, dua orang peserta
+                    menggunakan tongkat rotan dan perisai. Peresean
+                    sekarang juga sering ditampilkan sebagai salah satu
+                    cara untuk memperkenalkan budaya Lombok kepada wisatawan.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="culture-card">
+
+            <img src="events bau nyele kute lombok februari 1 18-19-2045.jpg" alt="Tradisi Bau Nyale">
+
+            <div class="culture-text">
+
+                <h3>Bau Nyale</h3>
+
+                <p>
+                    Bau Nyale merupakan tradisi masyarakat Lombok untuk
+                    menangkap nyale, yaitu hewan laut yang bentuknya seperti
+                    cacing. Tradisi ini berkaitan dengan legenda Putri
+                    Mandalika dan biasanya dilakukan sekitar bulan Februari
+                    atau Maret.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <section id="gili">
+
+            <h2>The Gili Islands</h2>
+
+            <p>
+                Di sekitar Lombok terdapat pulau-pulau kecil yang disebut Gili.
+                Tiga Gili yang paling terkenal adalah Gili Trawangan, Gili Meno,
+                dan Gili Air. Ketiga pulau ini tidak menggunakan mobil atau sepeda
+                motor berbahan bakar fosil. Wisatawan biasanya berjalan kaki,
+                menyewa sepeda, atau menggunakan kereta kuda tradisional yang
+                disebut <i>cidomo</i>.
+            </p>
+
+            <div class="gili">
+
+                <img src="Gili Trawangan Indonesia.jpg" alt="Gili Trawangan">
+
+                <div>
+                    <h3>1. Gili Trawangan</h3>
+
+                    <p>
+                        Gili Trawangan adalah pulau terbesar dan paling ramai di antara
+                        tiga Gili utama. Pulau ini terkenal dengan suasana yang meriah,
+                        banyak restoran, penginapan, serta tempat penyewaan alat snorkeling.
+                    </p>
+
+                    <p>
+                        Wisatawan juga dapat bersepeda mengelilingi pulau, menikmati
+                        <i>sunset</i>, atau bersantai di pantai. Gili Trawangan sering
+                        dianggap cocok bagi wisatawan yang menyukai aktivitas sosial
+                        dan hiburan malam.
+                    </p>
+
+                    <p>
+                        Meskipun ramai, pulau ini tetap memiliki pantai yang indah dan
+                        lokasi snorkeling untuk melihat ikan tropis serta penyu.
+                        Luasnya sekitar 3 kilometer panjang dan 2 kilometer lebar.
+                        Pulau ini juga memiliki bukit kecil yang dapat digunakan untuk
+                        melihat pemandangan laut.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="gili">
+
+                <img src="Gili Meno, Lombok.jpg"Gili Meno">
+
+                <div>
+                    <h3>2. Gili Meno</h3>
+
+                    <p>
+                        Gili Meno adalah pulau terkecil dan paling sepi di antara tiga
+                        Gili utama. Pulau ini sering disebut sebagai "pulau bulan madu"
+                        karena suasananya yang tenang, pantai pasir putih yang bersih,
+                        dan air laut yang jernih.
+                    </p>
+
+                    <p>
+                        Gili Meno cocok bagi wisatawan yang ingin bersantai jauh dari
+                        keramaian dan menikmati keindahan alam. Di tengah pulau terdapat
+                        danau asin yang dikelilingi hutan bakau.
+                    </p>
+
+                    <p>
+                        Di perairan sekitarnya juga dapat ditemukan penyu hijau dan
+                        penyu sisik. Salah satu lokasi snorkeling yang terkenal adalah
+                        patung bawah laut "Nest". Luasnya sekitar 2 kilometer panjang
+                        dan 1 kilometer lebar.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="gili">
+
+                <img src="gili air, lombok.jpg" alt="Gili Air">
+
+                <div>
+                    <h3>3. Gili Air</h3>
+
+                    <p>
+                        Gili Air menjadi salah satu pulau yang menarik untuk snorkeling
+                        dan menyelam. Pulau ini cukup tenang, tetapi tetap memiliki
+                        berbagai macam restoran, penginapan, tempat menyelam, dan
+                        kegiatan wisata lainnya.
+                    </p>
+
+                    <p>
+                        Gili Air memiliki suasana yang berada di antara Gili Trawangan
+                        dan Gili Meno. Karena memiliki keseimbangan antara ketenangan
+                        dan fasilitas, Gili Air cocok bagi wisatawan yang ingin
+                        bersantai tanpa merasa jauh dari kegiatan wisata.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="activities">
+
+            <h2>Activities in the Three Gili</h2>
+
+            <div class="activities">
+
+                <p>
+                    Selain menikmati pantai dan snorkeling, wisatawan di ketiga Gili
+                    juga dapat melakukan berbagai aktivitas seperti:
+                </p>
+
+                <ul>
+                    <li>Island hopping menggunakan perahu kecil</li>
+                    <li>Diving di lokasi-lokasi terkenal</li>
+                    <li>Menyewa sepeda untuk mengelilingi pulau</li>
+                    <li>Snorkeling dan melihat ikan serta penyu</li>
+                    <li>Bersantai dan menikmati sunset</li>
+                </ul>
+
+                <p>
+                    Tidak adanya kendaraan bermotor di ketiga Gili membuat suasananya
+                    lebih tenang dan juga ramah lingkungan.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>Made by Maria Stephanie IX-1 ♡</p>
+    </footer>
+
+</body>
+</html>
